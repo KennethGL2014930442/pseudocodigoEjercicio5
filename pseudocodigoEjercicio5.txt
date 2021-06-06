@@ -1,0 +1,23 @@
+Algoritmo Ejercicio5
+	Escribir 'Cuantas edades y sexos desea ingresar: '
+	Leer num
+	contadormenoredad <- 0
+	contadormayoredad <- 0
+	i <- 0
+	Mientras (i<num) Hacer
+		i <- i+1
+		Escribir 'Ingrese la edad de la persona ',i,':'
+		Leer edad
+		Escribir 'Ingrese el sexo de la persona ',i,':'
+		Leer sexo
+		Si (edad>=18 Y sexo='femenino') Entonces
+			contadormayoredad <- contadormayoredad+1
+		SiNo
+			Si (edad<18 Y sexo='masculino') Entonces
+				contadormenoredad <- contadormenoredad+1
+			FinSi
+		FinSi
+	FinMientras
+	Escribir 'La cantidad de mujeres mayores de edad es: ',contadormayoredad
+	Escribir 'La cantidad de hombres menores de edad es: ',contadormenoredad
+FinAlgoritmo
